@@ -1,0 +1,81 @@
+*{box-sizing: border-box;}
+
+body{
+  font-family: Arial, Helvetica, sans-scerif;
+}
+.headerContainer{
+  max-width: 900px;
+  margin:40px auto;
+  background-color: #bcbec2;
+  margin: auto;
+}
+
+.container{
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+}
+.container .leftSide{
+  flex:1;
+
+}
+
+.container .leftSide h1{
+  margin:0;
+  font-size: 40px;
+  color:#2940a8
+}
+
+.container .leftSide p{
+  font-size:16px;
+  margin-buttom :40px;
+  color:#000000;
+
+
+}
+
+.container .leftSide input{
+  width: 100%;
+  border:0;
+  border-bottom: 2px, solid rgba(0, 0, 0, 0.5);
+  padding: 10px 2px;
+  margin-bottom:20px;
+  font-size: 14px;
+  outline: 02;
+}
+
+.container .leftSide button{
+  background-color:#227C9D;
+  color:#FFF;
+  font-size: 15px;
+  border:0;
+  border-radius:10px;
+  width: 100%;
+  padding: 15px 0;
+  margin-top:40px;
+  cursor: pointer;
+  transition: all ease .5s;
+}
+
+.container .leftSide button:hover{
+  opacity: .4;
+}
+
+
+.container.rightSide{
+  flex:1;
+  background-color: rgb(255, 0, 0);
+}
+
+.container .rightSide{
+  flex:1;
+  margin-left: 40px;
+  display: flex;
+}
+
+.container .rightSide .grid {
+  flex:1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
